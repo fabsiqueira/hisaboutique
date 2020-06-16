@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "31103873813",
+    "firebase_url": "https://lojaflutter-29bd3.firebaseio.com",
+    "project_id": "lojaflutter-29bd3",
+    "storage_bucket": "lojaflutter-29bd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31103873813:android:5024848fa0140e5c032f1c",
+        "android_client_info": {
+          "package_name": "br.com.hbapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31103873813-3e0ofoadgpsd50qlrmqs94oj84uh4122.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8G7LofhO5LVyF4dSdI2OsBUdKNoLIkzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31103873813-3e0ofoadgpsd50qlrmqs94oj84uh4122.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
