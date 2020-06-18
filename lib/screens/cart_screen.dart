@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:hbapp/models/cart_model.dart';
 import 'package:hbapp/models/user_model.dart';
 import 'package:hbapp/screens/login_screen.dart';
+import 'package:hbapp/screens/order_screen.dart';
 import 'package:hbapp/tiles/cart_tile.dart';
+import 'package:hbapp/widgets/cart_price.dart';
 import 'package:hbapp/widgets/discount_card.dart';
+import 'package:hbapp/widgets/ship_card.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class CartScreen extends StatelessWidget {
@@ -78,7 +81,14 @@ class CartScreen extends StatelessWidget {
                   }
                   ).toList(),
                 ),
-                DiscountCard()
+                DiscountCard(),
+                ShipCard(),
+                CartPrice(()async{
+                 String orderId = await model.finishOrder();
+                 if(orderId != null)
+                   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> OrderScreen(orderId))
+                   );
+                }),
               ],
             );
           }
