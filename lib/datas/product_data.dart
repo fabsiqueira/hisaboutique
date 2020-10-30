@@ -23,7 +23,7 @@ class ProductData{
     return{
       "title" : title,
       "description": description,
-      "price":price
+      "price": price
     };
   }
 

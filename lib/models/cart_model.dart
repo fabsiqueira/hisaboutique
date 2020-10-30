@@ -101,7 +101,8 @@ Future<String> finishOrder() async{
     }
     );
     //salvando order Id dentro do usuário
-    await Firestore.instance.collection("users").document(user.firebaseUser.uid).collection("orders").document(refOrder.documentID).setData({
+    await Firestore.instance.collection("users").document(user.firebaseUser.uid)
+        .collection("orders").document(refOrder.documentID).setData({
       "orderId": refOrder.documentID
     }
     );
